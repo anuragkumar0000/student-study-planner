@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>student study planner</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <h1>Student Study Planner</h1>
+<p>Plan your study. Track your progress.</p>
+  <h2>My Dashboard</h2>
+  <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<h3>📚 My Subjects</h3>
+
+<div class="subjects">
+    <div class="subject-card">DSA</div>
+    <div class="subject-card">Operating System</div>
+    <div class="subject-card">OOP using Java</div>
+    <div class="subject-card">Discrete Mathematics</div>
+    <div class="subject-card">Digital Electronics</div>
+</div>
+
+<h3>📝 Today's Tasks</h3>
+
+<input type="text" id="taskInput" placeholder="Enter your task">
+
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList">
+</ul>
+
+<h3>📊 Today's Progress</h3>
+<div class="progress-container">
+    <div id="progressBar" class="progress-bar"></div>
+</div>
+
+<p id="progress">Study Progress: 0%</p>
+<script src="script.js"></script>
+<h3>⏱️ Study Timer</h3>
+
+<div class="timer">
+    <p id="timerDisplay">25:00</p>
+
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+</div>
+<footer>
+    <p>Student Study Planner | Made with HTML, CSS & JavaScript</p>
+</footer>
+</body>
+
+</html>
